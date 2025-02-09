@@ -1,0 +1,49 @@
+Defination : The Collectors class in Java provides a rich set of utility methods to perform various operations like aggregation, grouping, joining, and transformation on streams.
+
+1. Collectors for reduce and aggregation -
+   These collectors reduce or aggregate elements into a single result:
+
+   1. toList() :
+   2. toSet() :
+   3. toMap() :
+   4. counting() :
+   5. summarizingInt() : 
+   6. summingInt() :
+   7. averagingInt() :
+   8. reducing() :
+
+2. Collectors for grouping -
+   Group elements of the stream into categories:
+
+   1. groupingBy() :
+   2. groupingByConcurrent() :
+   3. partitionBy() :
+
+3. Collectors for joining the strings -
+   Combine stream elements into a single string:
+
+   1. joining
+   2. joining(delim)
+   3. joining(delim, prefix, suffix)
+
+4. Collectors for Mapping -
+   Transform elements before collecting them:
+
+   1. mapping() : 
+   2. filtering() :
+
+5. Downstream Collectors - 
+   These methods are used to apply additional collectors in grouping or partitioning:
+
+   1. groupingBy(classifier, downstream)
+   2. partitioningBy(predicate, downstream)
+
+6. Collectors for Custom Containers - 
+   You can use collectors to create custom containers:
+
+   1. toCollection() : 
+
+7. Flat Mapping (Java 9) -
+   To flatten nested collections or streams:
+
+   1. flatMapping()

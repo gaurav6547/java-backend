@@ -1,0 +1,32 @@
+@startuml
+interface Employee {
+    +showDetails(): void
+}
+
+class Developer implements Employee {
+    -name: String
+    -position: String
+    +showDetails(): void
+}
+
+class Designer implements Employee {
+    -name: String
+    -position: String
+    +showDetails(): void
+}
+
+class Manager implements Employee {
+    -name: String
+    -position: String
+    -subordinates: List<Employee>
+    +addSubordinate(Employee): void
+    +removeSubordinate(Employee): void
+    +showDetails(): void
+}
+
+Employee <|.. Developer
+Employee <|.. Designer
+Employee <|.. Manager
+Manager "1" o-- "*" Employee
+@enduml
+

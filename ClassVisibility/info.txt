@@ -1,0 +1,60 @@
+1. Access Modifiers for Classes
+
+ public:
+        The class is accessible from anywhere in the program.
+        Common for top-level classes meant to be widely used.
+
+        public class PublicClass {
+	    // Class content
+	}
+
+ default (No Modifier):
+
+	The class is accessible only within the same package.
+	Used when a class is an internal implementation detail and not part of the public API.
+
+ 	class DefaultClass {
+	    // Class content
+	}
+
+ private:
+
+	Only allowed for nested classes. A private class can only be accessed within its enclosing class.
+
+        public class OuterClass {
+	    private class InnerClass {
+        	// Class content
+    	    }
+	}
+
+2. Other Modifiers for Classes
+
+ final Classes:
+	A final class cannot be extended (inherited).
+
+	Useful for creating immutable or security-sensitive classes.
+
+	public final class FinalClass {
+    		// Class content
+	}
+
+ abstract Classes:
+	Cannot be instantiated; must be subclassed.
+
+	Used as a base class to provide a common interface or functionality.
+
+	 public abstract class AbstractClass {
+	     public abstract void performTask();
+     	 }
+
+ static Classes: 
+     	Only allowed for nested classes. A static nested class belongs to the enclosing class but does not need an instance of it.
+
+        public class OuterClass {
+    		public static class StaticNestedClass {
+        	// Class content
+    		}
+	}
+
+
+    

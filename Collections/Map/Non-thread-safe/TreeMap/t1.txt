@@ -1,0 +1,7 @@
+iCollection	Internal Data Structure	Performance
+ArrayList	Dynamic Array	Fast random access, slow insert/delete
+LinkedList	Doubly Linked List	Fast insert/delete, slow access
+HashMap	Hash Table + Linked List + Tree	Fast lookup (O(1))
+HashSet	Uses HashMap<K, Object>	Fast lookup (O(1))
+TreeMap	Red-Black Tree	Sorted (O(log n))
+ConcurrentHashMap	Segmented Hash Table	Thread-safe, fast (O(1))

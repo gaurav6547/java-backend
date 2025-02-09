@@ -1,0 +1,15 @@
+4. HashSet (Uses HashMap Internally)
+✅ Internal Data Structure: Hash Table (Uses HashMap<K, Object>)
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 HashSet uses a HashMap internally, but stores only keys, and the values are dummy objects.
+
+java
+Copy
+Edit
+HashSet<Integer> set = new HashSet<>();
+🔹 Internal Structure:
+
+Uses HashMap<Integer, Object> internally.
+The value is always a constant dummy object (PRESENT).

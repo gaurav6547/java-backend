@@ -1,0 +1,12 @@
+7. TreeMap (Uses Red-Black Tree)
+✅ Internal Data Structure: Self-Balancing Red-Black Tree
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 TreeMap stores key-value pairs in sorted order.
+
+TreeMap<Integer, String> map = new TreeMap<>();
+🔹 Performance:
+
+✅ O(log n) complexity for search, insert, delete (tree-based balancing).
+❌ Slower than HashMap (O(1)) for lookup operations.

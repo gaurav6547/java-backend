@@ -1,0 +1,35 @@
+@startuml
+interface MediaPlayer {
+    + play(audioType: String, fileName: String)
+}
+
+interface AdvancedMediaPlayer {
+    + playVlc(fileName: String)
+    + playMp4(fileName: String)
+}
+
+class VlcPlayer implements AdvancedMediaPlayer {
+    + playVlc(fileName: String)
+    + playMp4(fileName: String)
+}
+
+class Mp4Player implements AdvancedMediaPlayer {
+    + playVlc(fileName: String)
+    + playMp4(fileName: String)
+}
+
+class MediaAdapter implements MediaPlayer {
+    - advancedMediaPlayer: AdvancedMediaPlayer
+    + play(audioType: String, fileName: String)
+}
+
+class AudioPlayer implements MediaPlayer {
+    + play(audioType: String, fileName: String)
+}
+
+MediaAdapter o-- AdvancedMediaPlayer
+AudioPlayer o-- MediaAdapter
+VlcPlayer --|> AdvancedMediaPlayer
+Mp4Player --|> AdvancedMediaPlayer
+AudioPlayer --|> MediaPlayer
+@enduml

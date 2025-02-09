@@ -1,0 +1,39 @@
+@startuml
+interface Renderer {
+    + renderCircle(radius: float)
+    + renderRectangle(width: float, height: float)
+}
+
+class VectorRenderer {
+    + renderCircle(radius: float)
+    + renderRectangle(width: float, height: float)
+}
+
+class RasterRenderer {
+    + renderCircle(radius: float)
+    + renderRectangle(width: float, height: float)
+}
+
+abstract class Shape {
+    - renderer: Renderer
+    + draw()
+}
+
+class Circle {
+    - radius: float
+    + draw()
+}
+
+class Rectangle {
+    - width: float
+    - height: float
+    + draw()
+}
+
+Shape o-- Renderer
+Circle --|> Shape
+Rectangle --|> Shape
+VectorRenderer --|> Renderer
+RasterRenderer --|> Renderer
+@enduml
+

@@ -1,0 +1,19 @@
+✅ basics Lambda Expression
+
+1. Lambda with No Parameters
+2. Lambda with Single parameter
+3. Lambda with Multiple Parameters
+4. Lambda with block statements
+5. Lambda with Java’s Built-in Functional Interface (Predicate)
+6. Lambda with List.forEach()
+7. Lambda with Comparator for Sorting a List
+8. Lambda with Multi-threading (Runnable)
+9. Lambda with Stream API (Filtering and Mapping)
+
+✅ Advanced Lambda Expression
+
+1. Chaining Functions
+2. Exception Handling in Lambda
+3. Using Lambda with Custom Objects
+4. Method References in Lambda
+5. Parallel Processing with Lambda

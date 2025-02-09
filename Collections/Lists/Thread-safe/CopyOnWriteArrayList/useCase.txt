@@ -1,0 +1,24 @@
+1. Dynamic Configuration Management
+Scenario: A system where application settings or configurations need to be updated at runtime without stopping the application.
+Example:
+A server that adjusts feature flags dynamically based on environment conditions.
+A microservices architecture where multiple services read shared configurations, while an admin service updates them.
+Implementation:
+Readers represent the services accessing configurations.
+The updater represents the admin service modifying the configurations.
+2. Real-Time Monitoring Systems
+Scenario: A monitoring tool reads system metrics (e.g., CPU, memory, etc.) while configuration changes (e.g., thresholds or monitoring rules) are applied on-the-fly.
+Example:
+A monitoring dashboard where multiple clients query system statuses while administrators update the monitoring rules.
+3. Software Feature Toggles
+Scenario: Managing feature toggles where threads read the current state of feature availability, and updates reflect new states.
+Example:
+A system enabling/disabling features like dark mode, beta features, or AB testing toggles dynamically.
+4. Thread-Safe Shared Data Management
+Scenario: Applications where multiple threads operate on shared data, such as reading logs or event streams, while new data is being added.
+Example:
+A distributed event-processing system where multiple consumers read from a shared list while producers add new events.
+5. Live Update for Client Applications
+Scenario: Applications that push live updates to client devices without disrupting existing sessions.
+Example:
+A live sports score application where multiple clients poll or subscribe to the current scores while the server updates them dynamically.

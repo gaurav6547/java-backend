@@ -1,0 +1,15 @@
+2. LinkedList (Uses Doubly Linked List Internally)
+
+✅ Internal Data Structure: Doubly Linked List
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 LinkedList stores each element in a node, which contains:
+1. Data
+2. Pointer to the next node (next)
+3.Pointer to the previous node (prev)
+
+🔹 Performance:
+
+✅ Fast insert/delete (O(1)) since no shifting is needed.
+❌ Slow access (O(n)) as it traverses nodes one by one.

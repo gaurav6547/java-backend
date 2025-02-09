@@ -1,0 +1,51 @@
+✅ Key Features of Multithreading in Java:
+1. Concurrency: Multiple threads can run independently and share the same resources, such as memory and CPU.
+2. Resource Sharing: Threads share process resources, making it more efficient than using multiple processes.
+3. Cost-effective: Threads are lightweight compared to processes because they share the same memory space.
+4. Improved Performance: It can enhance performance by utilizing multiple CPU cores.
+
+---------------------------
+✅  Thread lifecycle method - 
+---------------------------
+1. start() : start a new Thread and call a run() method
+2. run() : contains the thread task logic
+3. join() : wait for the thread to finish the execution 
+4. join(long mills) : Waits for the thread to finish execution for a given time
+5. interrupt() : Interrupts the thread if it is sleeping, waiting, or blocked
+6. isAlive() : Checks if the thread is still running
+--------------------------------------------------------------------------------------------------------
+
+--------------------------
+✅  Thread control Methods - 
+--------------------------
+1. sleep(long millis) : Pauses the thread for a specified time (in milliseconds).
+2. sleep(long millis, int nanos) : Pauses for milliseconds and nanoseconds.
+3. yield() : Suggests to the scheduler to allow other threads to run.
+4. interrupt() : Requests the thread to stop by setting the interrupt flag.
+5. isInterrupted() : Checks if the thread has been interrupted.
+6. setDaemon(boolean on) : Marks the thread as a daemon thread.
+7. isDaemon() : Checks if the thread is a daemon thread.
+--------------------------------------------------------------------------------------------------------
+
+-----------------------
+✅  Thread Informations - 
+-----------------------
+1. getId() : Returns the thread's unique ID.
+2. getName() : Retrieves the name of the thread.
+3. setName(String name) : Sets a name for the thread.
+4. getPriority() : Gets the thread priority.
+5. setPriority(int newPriority)	: Sets the thread priority (1 to 10).
+6. getState() : Returns the current state of the thread (e.g., NEW, RUNNABLE, BLOCKED).
+7. activeCount() : Returns the number of active threads in the current thread's group.
+8. currentThread() : Returns a reference to the currently executing thread.
+--------------------------------------------------------------------------------------------------------
+
+----------------------------------------------
+✅  Synchronization and Communications Methods -
+----------------------------------------------
+1. wait() : Makes the thread wait until another thread notifies it.
+2. wait(long timeout) : Makes the thread wait for a specified time before resuming.
+3. wait(long timeout, int nanos) : Waits for the specified milliseconds and nanoseconds.
+4. notify() : Wakes up a single thread that is waiting on this object's monitor.
+5. notifyAll() : Wakes up all threads that are waiting on this object's monitor.
+--------------------------------------------------------------------------------------------------------

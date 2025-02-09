@@ -1,0 +1,19 @@
+5. ConcurrentHashMap (Thread-Safe HashMap)
+✅ Internal Data Structure: Segmented Hash Table (Uses Locking)
+✅ Memory Location: Heap Memory
+✅ Framework: java.util.concurrent
+
+🔹 ConcurrentHashMap is an optimized thread-safe version of HashMap.
+
+java
+Copy
+Edit
+ConcurrentHashMap<String, Integer> map = new ConcurrentHashMap<>();
+🔹 Internal Structure:
+
+Uses Segmented Buckets (Partitioned Locks) for better concurrency.
+Unlike Hashtable, which locks the whole table, ConcurrentHashMap locks only a portion of the table.
+🔹 Performance:
+
+✅ Faster than Hashtable because it locks only segments (O(1)).
+❌ More memory overhead than HashMap due to additional segments.

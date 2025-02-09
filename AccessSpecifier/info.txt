@@ -1,0 +1,43 @@
+* Access Specifiers in Java:
+1. public: Accessible from anywhere.
+2. protected: Accessible within the same package and by subclasses in other packages.
+3. default (no modifier): Accessible only within the same package.
+4. private: Accessible only within the same class.
+
+
+
+1. Encapsulation (Key Principle of OOP)
+What it means: Encapsulation involves hiding the internal details of a class and exposing only the necessary parts.
+How getters help: By marking fields private and providing public getter methods, you control how external code accesses the data. This prevents direct modification and allows you to enforce rules around data access.
+
+
+2. Control Over Data Access
+Why it’s important: You can customize the logic in the getter to validate or process data before providing it.
+
+
+
+3. Read-Only Access
+Why it’s important: You can provide read-only access to a field by defining only a getter without a setter. This ensures data cannot be modified from outside the class.
+
+
+
+4. Data Validation and Logic
+Why it’s important: You can add business logic in getters to return values based on conditions.
+
+
+
+
+
+5. Loose Coupling and Future Changes
+What it means: If you decide to change the internal implementation of a class (e.g., renaming or removing fields), the getter method interface can stay the same, ensuring existing code using the class doesn’t break.
+
+
+
+6. Debugging and Logging
+Why it’s useful: You can include debugging or logging logic inside getter methods to track how and when data is accessed.
+
+
+
+
+7. Adherence to JavaBean Standards
+Why it’s important: In Java, many frameworks (e.g., Spring, Hibernate) and libraries rely on getter methods for accessing fields. These frameworks assume a class follows JavaBean conventions, where fields are accessed via getFieldName() and setFieldName() methods.

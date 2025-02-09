@@ -1,0 +1,14 @@
+1. ArrayList (Uses Dynamic Array Internally)
+Internal Data Structure: Resizable dynamic array
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 How ArrayList Grows Internally?
+* Default initial capacity = 10 (if no size is provided)
+* When full, it increases by 50% (newCapacity = oldCapacity + oldCapacity/2)
+
+🔹 Performance:
+✅ Fast for indexing (O(1)) because it uses an array.
+❌ Slow for insert/delete (O(n)) because shifting occurs.
+
+

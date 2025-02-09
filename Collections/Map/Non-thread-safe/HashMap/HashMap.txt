@@ -1,0 +1,27 @@
+3. HashMap (Uses Hash Table + Linked List + Red-Black Tree)
+
+✅ Internal Data Structure: Array of Linked Lists (Buckets) → Converted to Red-Black Tree
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 HashMap stores key-value pairs using hashing.
+
+HashMap<String, Integer> map = new HashMap<>();
+
+🔹 Internal Structure:
+
+1. Uses an array of nodes (Entry<K, V>).
+2. Each index in the array is called a bucket.
+3. Uses hashCode() of the key to determine the bucket index.
+4. If multiple keys have the same hash (collision), it stores them in a Linked List.
+5. If a bucket size exceeds 8 elements, it converts the list into a Red-Black Tree for faster lookup (O(log n)) instead of O(n).
+
+🔹 Performance:
+
+✅ Average time complexity for put/get() is O(1).
+❌ In worst-case (collisions), complexity becomes O(n), but it optimizes using Red-Black Trees (O(log n)).
+🔹 Threshold for resizing:
+
+Default capacity: 16
+Load factor: 0.75 (Resize happens when size > 75% of capacity)
+

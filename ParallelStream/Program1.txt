@@ -1,0 +1,9 @@
+Processing and Analyzing Large Dataset with Parallel Stream
+
+Scenario:
+Imagine you have a list of customer orders, and you need to:
+
+* Filter out canceled orders.
+* Compute the total value of completed orders.
+* Generate a summary of top customers based on their total spending.
+* The dataset is large, so processing it in parallel can improve performance.

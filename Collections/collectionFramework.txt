@@ -1,0 +1,11 @@
+✅ List Interface 
+
+✅ Set Interface
+ 
+✅ Map Interface
+
+✅ Queue Interface
+
+✅ Deque Interface
+
+✅ Priority Queue Interface

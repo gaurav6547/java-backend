@@ -1,0 +1,26 @@
+6. Stack (Uses Array or Linked List)
+✅ Internal Data Structure: Array + Pointer (LIFO)
+✅ Memory Location: Heap Memory
+✅ Framework: Java Collections Framework (JCF)
+
+🔹 Stack follows Last-In-First-Out (LIFO) principle.
+
+java
+Copy
+Edit
+Stack<Integer> stack = new Stack<>();
+🔹 Operations:
+
+push(E e) → Adds element on top
+pop() → Removes top element
+peek() → Returns top element without removing
+Internal Memory Representation
+scss
+Copy
+Edit
+Top -> [30] [20] [10]  (Pop removes 30 first)
+🔹 Performance:
+
+✅ Push/Pop operations are O(1).
+❌ Uses more memory than arrays due to dynamic resizing.
+
